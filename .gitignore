@@ -1,0 +1,43 @@
+### Fichiers et dossiers généraux à ignorer ###
+# Logiques de développement
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store # macOS
+Thumbs.db # Windows
+desktop.ini # Windows
+
+# Dossiers de build/compilation
+/build/
+/dist/
+/target/
+*.pyc
+
+### Fichiers et dossiers spécifiques au Python ###
+__pycache__/
+venv/
+.venv/
+.mypy_cache/
+.pytest_cache/
+*.egg-info/
+.coverage
+
+### Fichiers spécifiques aux EDI (Éditeurs de Code) ###
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# PyCharm/IntelliJ
+.idea/
+
+### Fichiers de la plateforme Autodesk (pour Maya/Shotgun/etc.) ###
+# Ces fichiers stockent souvent des données de l'utilisateur ou du cache
+*.mel.lock
+*.py.lock
+# Fichiers de cache potentiels dans l'environnement de travail
+*.mtf
