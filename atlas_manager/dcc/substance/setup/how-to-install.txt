@@ -1,0 +1,17 @@
+Atlas Manager <template_dcc_name> Installation Guide
+Substance Integration
+=====================
+
+1. Locate the Substance python startup folder.
+
+.. tip::
+    | On Windows: ``%USERPROFILE%\Documents\Adobe\Adobe Substance 3D Painter\python\startup``
+
+2. Find the ``atlas_init.py`` file in the ``atlas_manager/dcc/substance/setup`` folder and copy it to the substance startup folder.
+
+3. Open the copied ``atlas_init.py`` with a text editor and replace the ``PATH\\TO\\PARENT\\FOLDER\\OF\\ATLASMANAGER\\`` with the extracted parent of the atlas_manager folder.
+
+.. attention::
+    The Path MUST be the parent of the atlas_manager folder. If you extracted the contents directly from the zip file it will be something like ``atlas_manager-4.0.7-beta``.
+
+4. Open Substance and you should see the Atlas Manager menu in the top menu bar.

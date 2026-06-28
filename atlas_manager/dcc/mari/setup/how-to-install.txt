@@ -1,0 +1,18 @@
+Mari Integration
+===================
+
+1. Locate the Mari scripts folder. (Create the Scripts folder if it doesn't exist)
+
+.. tip::
+    | On Linux: ``/Mari/Scripts``
+    | On Windows: ``Documents\Mari\Scripts``
+    | On Mac: ``/Documents/Mari/Scripts``
+
+2. Find the ``atlasmanager_init.py`` file in the ``atlas_manager/dcc/mari/setup`` folder and copy it to the Mari scripts folder.
+
+3. Open the copied ``atlasmanager_init.py`` with a text editor and replace the ``PATH\\TO\\PARENT\\FOLDER\\OF\\ATLASMANAGER\\`` with the extracted parent of the atlas_manager folder.
+
+.. attention:: 
+    The Path MUST be the parent of the atlas_manager folder. If you extracted the contents directly from the zip file it will be something like ``atlas_manager-4.0.7-beta``.
+
+4. Open Mari and you should see the Atlas Manager menu in the top menu bar.

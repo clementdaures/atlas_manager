@@ -1,0 +1,9 @@
+Atlas Manager Maya Installation Guide
+
+Locate the 'dragAndDropMe.py' file in the atlas_manager/dcc/maya/setup folder.
+
+Drag and drop the file into the Maya viewport.
+
+Restart Maya.
+
+That's it! You should now see the Atlas Manager menu in the Maya menu bar and the Atlas Manager shelf in the Maya shelf bar.
