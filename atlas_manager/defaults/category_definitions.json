@@ -1,0 +1,58 @@
+{
+  "mdl": {
+    "type": "asset",
+    "validations": ["forbidden_nodes", "locked_normals", "ngons", "overlapping_uvs", "shape_names", "turtle", "unique_names"],
+    "extracts": ["source", "alembic"]
+  },
+  "set": {
+    "type": "asset",
+    "validations": ["forbidden_nodes", "locked_normals", "ngons", "overlapping_uvs", "shape_names", "turtle"],
+    "extracts": ["source"]
+  },
+  "ldv": {
+    "type": "asset",
+    "validations": ["forbidden_nodes", "turtle"],
+    "extracts": ["archive", "texture_bundle"]
+  },
+  "rig": {
+    "type": "asset",
+    "validations": ["forbidden_nodes", "turtle"],
+    "extracts": ["source"]
+  },
+  "anim": {
+        "type": "shot",
+        "validations": ["forbidden_nodes", "turtle"],
+        "extracts": ["source", "alembic", "preview"]
+    },
+  "lyt": {
+        "type": "shot",
+        "validations": ["forbidden_nodes", "turtle"],
+        "extracts": ["source"]
+    },
+  "light": {
+        "type": "shot",
+        "validations": ["forbidden_nodes", "turtle"],
+        "extracts": ["source"]
+    },
+  "vfx": {
+        "type": "shot",
+        "validations": ["forbidden_nodes", "turtle"],
+        "extracts": ["source", "alembic"]
+    },
+  "cfx": {
+        "type": "shot",
+        "validations": ["forbidden_nodes", "turtle"],
+        "extracts": ["source", "alembic"]
+    },
+  "comp": {
+        "type": "shot",
+        "validations": [],
+        "extracts": ["source", "render"]
+    },
+  "trash": {
+        "type": "",
+        "validations": [],
+        "extracts": ["source"],
+        "archived": true
+    }
+}
