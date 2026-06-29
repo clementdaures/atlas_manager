@@ -1,0 +1,128 @@
+{
+  "testCheck: ": {
+    "display_name": "Test Check",
+    "type": "boolean",
+    "value": true,
+    "disables": [
+      [
+        true,
+        "testString"
+      ]
+    ]
+  },
+  "resolutionTest": {
+    "display_name": "Resolution test",
+    "type": "vector2Int",
+    "value": [1024, 768]
+  },
+  "testString": {
+    "type": "string",
+    "value": "",
+    "placeholder": "(Optional)"
+  },
+  "testCombo": {
+    "type": "combo",
+    "items": [
+      "Superman",
+      "Still",
+      "Walking"
+    ],
+    "value": "Still"
+  },
+  "testRadio": {
+    "type": "combo",
+    "items": [
+      "radioGa",
+      "radioGu",
+      "radioGuGu"
+    ],
+    "value": "radioGuGu",
+    "disables": [
+      [
+        "radioGu",
+        "groupCheck"
+      ]
+    ]
+  },
+  "testSpinnerInt": {
+    "type": "spinnerInt",
+    "value": 12,
+    "minimum": 0,
+    "maximum": 100
+  },
+  "testSpinnerFloat": {
+    "type": "spinnerFloat",
+    "value": 341.23,
+    "minimum": 0.0,
+    "maximum": 999.9
+  },
+  "testMulti": {
+    "type": "multi",
+    "value": {
+      "override": {
+        "type": "boolean",
+        "value": true,
+        "object_name": "resolution_override",
+        "disables": [
+          [
+            false,
+            "resolutionX"
+          ],
+          [
+            false,
+            "resolutionY"
+          ]
+        ]
+      },
+      "resolutionX": {
+        "type": "spinnerInt",
+        "value": 1920,
+        "minimum": 1,
+        "maximum": 999999
+      },
+      "resolutionY": {
+        "type": "spinnerInt",
+        "value": 1080,
+        "minimum": 1,
+        "maximum": 999999,
+        "object_name": "resolutionY"
+      }
+    }
+  },
+  "testSecond": {
+    "type": "multi",
+    "value": {
+      "multiX": {
+        "type": "float",
+        "value": 1920,
+        "minimum": 1,
+        "maximum": 999999
+      },
+        "multiY": {
+            "type": "integer",
+            "value": 1080,
+            "minimum": 1,
+            "maximum": 999999
+        }
+    }
+  },
+  "testList": {
+    "type": "list",
+    "value": ["Is", "This", "The", "Real", "Life"]
+  },
+  "testGroup": {
+    "type": "group",
+    "value": {
+      "groupCheck": {
+        "type": "boolean",
+        "value": true
+      },
+      "groupString": {
+        "type": "string",
+        "value": "Hello"
+      }
+    }
+  }
+}
+
+
