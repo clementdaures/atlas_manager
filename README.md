@@ -42,7 +42,7 @@
 
 ### 📁 Repository Purpose
 
-This repository serves as the **central hub** for the technical pipeline of _Andhakara_. Atlas Manager is a fork of Tik Manager
+This repository serves as the **central hub** for the technical pipeline of _Andhakara_. Atlas Manager is a fork of Tik Manager. 
 It contains:
 - Scene and asset management tools
 - Access to production documents
