@@ -58,24 +58,6 @@ import_chr_lookdev_tool = hou.shelves.newTool(name="ImportLookdev", label="Impor
 tools.append(import_chr_lookdev_tool)
 
 
-import_reset_command = """
-from atlas_manager.plugins import reset_mplay
-reset_mplay.reset_ipr()
-"""
-import_reset_icon = str(icons_folder / "atlas_ipr_reset.png")
-import_reset_tool = hou.shelves.newTool(name="ResetIPR", label="Reset IPR", script=import_reset_command, icon=import_reset_icon)
-tools.append(import_reset_tool)
-
-
-import_parse_command = """
-from atlas_manager.plugins import parse_tex
-parse_tex.parse_and_rename()
-"""
-import_parse_icon = str(icons_folder / "atlas_parse_tex.png")
-import_parse_tool = hou.shelves.newTool(name="ParseTexture", label="Parse Texture", script=import_parse_command, icon=import_parse_icon)
-tools.append(import_parse_tool)
-
-
 render_lookdev_command = """
 from atlas_manager.plugins import export_render as exp_rdr
 exp_rdr.render_lookdev()
