@@ -74,15 +74,6 @@ class Usd(ExtractCore):
         else:
             self._extension = ".usd"
 
-        # Category names must match to the ones in category_definitions.json (case sensitive)
-        self.category_functions = {
-            "Model": self._extract_model,
-            "Animation": self._extract_animation,
-            "Fx": self._extract_fx,
-            "Layout": self._extract_layout,
-            "Lighting": self._extract_lighting,
-        }
-
     # ------------------------------------------------------------------
     # Internal helpers
     # ------------------------------------------------------------------
@@ -264,57 +255,6 @@ class Usd(ExtractCore):
             rop_sop.parm("f2").set(end_frame)
             rop_sop.parm("f3").set(step)
 
-    # ------------------------------------------------------------------
-    # Category extract methods
-    # ------------------------------------------------------------------
-
-    def _extract_model(self):
-        """Extract method for model category."""
-        _file_path = self.resolve_output()
-        geo_node, rop_sop = self.__extract_base()
-
-        rop_sop.parm("lopoutput").set(_file_path)
-        self.__apply_frame_range(rop_sop)
-
-        rop_sop.parm("execute").pressButton()
-        if geo_node:
-            geo_node.destroy()
-        return True
-
-    def _extract_animation(self):
-        """Extract method for animation category."""
-        settings = self.settings.get("Animation")
-        sub_steps = settings.get_property("sub_steps")
-
-        _file_path = self.resolve_output()
-        geo_node, rop_sop = self.__extract_base()
-
-        rop_sop.parm("lopoutput").set(_file_path)
-        self.__apply_frame_range(rop_sop, sub_steps=sub_steps)
-
-        rop_sop.parm("execute").pressButton()
-        if geo_node:
-            geo_node.destroy()
-
-    def _extract_fx(self):
-        """Extract method for fx category (identical to animation)."""
-        self._extract_animation()
-
-    def _extract_layout(self):
-        """Extract method for layout category."""
-        _file_path = self.resolve_output()
-        geo_node, rop_sop = self.__extract_base()
-
-        rop_sop.parm("lopoutput").set(_file_path)
-        self.__apply_frame_range(rop_sop)
-
-        rop_sop.render()
-        if geo_node:
-            geo_node.destroy()
-
-    def _extract_lighting(self):
-        """Extract method for lighting category (identical to layout)."""
-        self._extract_layout()
 
     def _extract_default(self):
         """Extract method for any non-specified category."""

@@ -39,38 +39,6 @@ class USD(IngestCore):
         """Import USD File with default settings."""
         cmds.mayaUSDImport(file=self.ingest_path, primPath="/")
 
-    def _bring_in_model(self):
-        """Import USD File for model category."""
-        cmds.mayaUSDImport(file=self.ingest_path, readAnimData=False, useAsAnimationCache=False, primPath="/")
-
-    def _bring_in_lookdev(self):
-        """Import USD File for lookdev category."""
-        # identical to model
-        self._bring_in_model()
-
-    def _bring_in_assembly(self):
-        """Import USD File for assembly category."""
-        # identical to model
-        self._bring_in_model()
-
-    def _bring_in_layout(self):
-        """Import USD File for layout category."""
-        # identical to animation
-        self._bring_in_animation()
-
-    def _bring_in_animation(self):
-        """Import USD File."""
-        cmds.mayaUSDImport(file=self.ingest_path, readAnimData=1, useAsAnimationCache=True, primPath="/")
-
-    def _bring_in_fx(self):
-        """Import USD File."""
-        # identical to animation
-        self._bring_in_animation()
-
-    def _bring_in_lighting(self):
-        """Import USD File."""
-        # identical to animation
-        self._bring_in_animation()
 
     def _reference_default(self):
         """Reference USD File with default settings."""
