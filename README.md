@@ -4,23 +4,23 @@
 
 ---
 
-### 📦 Version  
+## Version  
 **1.00** — *04/09/25*
 
-### 🎬 Designed For
+## Designed For
 - **Autodesk Maya 2025** (Python 3.11, PySide6)
 - **SideFX Houdini 20.5.445** (Python 3.11)
 
 ---
 
-### 👨‍💻 Author  
+## Author  
 **Clement Daures**  
-📧 *support@clementdaures.com*
+- *support@clementdaures.com*
 (Pipeline TD / Dev / Rigging)
 
 ---
 
-### 👥 Team  
+## Team  
 - Léo Barachant (Animation 3D, Editing, Modeling)
 - Théo Berail (Storyboard, Scenario, Animation 3D) 
 - Nino David (Modeling, Sculpting, Surfacing, Lighting)
@@ -34,13 +34,13 @@
 
 ---
 
-### 🎞️ Logline
+## Logline
 
 > When her older sister accidentally dies in front of her, a stubborn teenager enters the world of the dead to bring back her soul.
 
 ---
 
-### 📁 Repository Purpose
+## Repository Purpose
 
 This repository serves as the **central hub** for the technical pipeline of _Andhakara_. Atlas Manager is a fork of Tik Manager. 
 It contains:
@@ -50,7 +50,7 @@ It contains:
 
 ---
 
-### 🧰 Tech Highlights
+## Tech Highlights
 
 - Modular Python architecture
 - Anim tools for streamlined animation workflows  
@@ -58,7 +58,7 @@ It contains:
 
 ---
 
-### 📄 License
+## License
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
@@ -68,7 +68,7 @@ See the full license text here: https://www.gnu.org/licenses/gpl-3.0.html
 
 ---
 
-### 📌 Notes
+## Notes
 
 - Please ensure proper environment setup (Python 3.11, PySide6, Maya 2025, Houdini 20.5.445) before using any scripts.
 
